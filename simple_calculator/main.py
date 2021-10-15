@@ -2,6 +2,9 @@ from tkinter import *
 #program to make a calculator
 root = Tk()
 root.title('Calculator')
+icon=PhotoImage(file='icon.png')
+root.iconphoto(False,icon)
+
 data = Entry(root,width=45,borderwidth=4)
 data.grid(row=0,column=0,columnspan=5,padx=10,pady=10)
 def clearing():
